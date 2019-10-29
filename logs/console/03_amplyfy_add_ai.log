@@ -1,0 +1,25 @@
+TMPC-015:refillapp a-yamamoto$ amplify add api
+? Please select from one of the below mentioned services: GraphQL
+? Provide API name: refillapp
+? Choose the default authorization type for the API API key
+? Enter a description for the API key:
+? After how many days from now the API key should expire (1-365): 7
+? Do you want to configure advanced settings for the GraphQL API No, I am done.
+? Do you have an annotated GraphQL schema? No
+? Do you want a guided schema creation? No
+? Provide a custom type name RefillLocation
+Creating a base schema for you...
+
+The following types do not have '@auth' enabled. Consider using @auth with @model
+	 - RefillLocation
+Learn more about @auth here: https://aws-amplify.github.io/docs/cli-toolchain/graphql#auth
+
+
+GraphQL schema compiled successfully.
+
+Edit your schema at /Users/a-yamamoto/git/amplify/refillapp/amplify/backend/api/refillapp/schema.graphql or place .graphql files in a directory at /Users/a-yamamoto/git/amplify/refillapp/amplify/backend/api/refillapp/schema
+Successfully added resource refillapp locally
+
+Some next steps:
+"amplify push" will build all your local backend resources and provision it in the cloud
+"amplify publish" will build all your local backend and frontend resources (if you have hosting category added) and provision it in the cloud
