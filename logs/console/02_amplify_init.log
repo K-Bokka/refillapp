@@ -1,0 +1,76 @@
+TMPC-015:refillapp a-yamamoto$ amplify init
+Note: It is recommended to run this command from the root of your app directory
+? Enter a name for the project refillapp
+? Enter a name for the environment staging
+? Choose your default editor: IntelliJ IDEA
+? Choose the type of app that you're building javascript
+Please tell us about your project
+? What javascript framework are you using react
+? Source Directory Path:  src
+? Distribution Directory Path: build
+? Build Command:  npm run-script build
+? Start Command: npm run-script start
+Using default provider  awscloudformation
+AWS access credentials can not be found.
+? Setup new user Yes
+Follow these steps to set up access to your AWS account:
+
+Sign in to your AWS administrator account:
+https://console.aws.amazon.com/
+Press Enter to continue
+
+Specify the AWS Region
+? region:  ap-northeast-1
+Specify the username of the new IAM user:
+? user name:  amplify-rxSm2
+Complete the user creation using the AWS console
+https://console.aws.amazon.com/iam/home?region=undefined#/users$new?step=final&accessKey&userNames=amplify-rxSm2&permissionType=policies&policies=arn:aws:iam::aws:policy%2FAdministratorAccess
+Press Enter to continue
+
+Enter the access key of the newly created user:
+? accessKeyId:  AKIAYJBDBV**********
+? secretAccessKey:  B/3NhPPkpGESGGcZP6bt********************
+This would update/create the AWS Profile in your local machine
+? Profile Name:  k-bokka-amplify
+
+Successfully set up the new user.
+
+For more information on AWS Profiles, see:
+https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html
+
+? Do you want to use an AWS profile? Yes
+? Please choose the profile you want to use k-bokka-amplify
+⠦ Initializing project in the cloud...
+
+CREATE_IN_PROGRESS amplify-refillapp-staging-112608 AWS::CloudFormation::Stack Tue Oct 29 2019 11:26:08 GMT+0900 (GMT+09:00) User Initiated
+CREATE_IN_PROGRESS DeploymentBucket                 AWS::S3::Bucket            Tue Oct 29 2019 11:26:11 GMT+0900 (GMT+09:00)
+CREATE_IN_PROGRESS AuthRole                         AWS::IAM::Role             Tue Oct 29 2019 11:26:12 GMT+0900 (GMT+09:00)
+CREATE_IN_PROGRESS UnauthRole                       AWS::IAM::Role             Tue Oct 29 2019 11:26:12 GMT+0900 (GMT+09:00)
+CREATE_IN_PROGRESS AuthRole                         AWS::IAM::Role             Tue Oct 29 2019 11:26:12 GMT+0900 (GMT+09:00) Resource creation Initiated
+CREATE_IN_PROGRESS UnauthRole                       AWS::IAM::Role             Tue Oct 29 2019 11:26:13 GMT+0900 (GMT+09:00) Resource creation Initiated
+CREATE_IN_PROGRESS DeploymentBucket                 AWS::S3::Bucket            Tue Oct 29 2019 11:26:13 GMT+0900 (GMT+09:00) Resource creation Initiated
+⠇ Initializing project in the cloud...
+
+CREATE_COMPLETE AuthRole AWS::IAM::Role Tue Oct 29 2019 11:26:23 GMT+0900 (GMT+09:00)
+⠧ Initializing project in the cloud...
+
+CREATE_COMPLETE UnauthRole AWS::IAM::Role Tue Oct 29 2019 11:26:25 GMT+0900 (GMT+09:00)
+⠇ Initializing project in the cloud...
+
+CREATE_COMPLETE DeploymentBucket                 AWS::S3::Bucket            Tue Oct 29 2019 11:26:34 GMT+0900 (GMT+09:00)
+CREATE_COMPLETE amplify-refillapp-staging-112608 AWS::CloudFormation::Stack Tue Oct 29 2019 11:26:37 GMT+0900 (GMT+09:00)
+✔ Successfully created initial AWS cloud resources for deployments.
+✔ Initialized provider successfully.
+Initialized your environment successfully.
+
+Your project has been successfully initialized and connected to the cloud!
+
+Some next steps:
+"amplify status" will show you what you've added already and if it's locally configured or deployed
+"amplify <category> add" will allow you to add features like user login or a backend API
+"amplify push" will build all your local backend resources and provision it in the cloud
+"amplify publish" will build all your local backend and frontend resources (if you have hosting category added) and provision it in the cloud
+
+Pro tip:
+Try "amplify add api" to create a backend API and then "amplify publish" to deploy everything
+
